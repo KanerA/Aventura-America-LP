@@ -13,8 +13,10 @@ const App = () => {
         </div>
       </div>
       <div className="mainSection">
-        <h1>WE ARE LAUNCHING SOON!</h1>
-        <h5>Subscribe and get notified</h5>
+        <div className="headers">
+          <h1>WE ARE LAUNCHING SOON!</h1>
+          <h5>Subscribe and get notified</h5>
+        </div>
         <div className="subscriptionInputs">
           <div className="inputContainer">
             <input type="text" name="email" id="emailInput" />
