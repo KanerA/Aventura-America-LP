@@ -1,0 +1,94 @@
+* {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("./assets/main_picture.jpg");
+  filter: blur(1px);
+  z-index: -1;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  & > img {
+    height: 200px;
+  }
+}
+
+.mainSection {
+  min-height: 100%;
+  width: fit-content;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 151, 178, 0.7);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+h1,
+h5 {
+  margin: 0;
+}
+
+input[type="text"] {
+  width: 20rem;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border-radius: 10rem;
+  color: white;
+  background-color: #05ccef;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: ease-in-out 0.4s;
+  position: relative;
+  overflow: hidden;
+
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #21bcd7;
+}
+
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 #21bcd7;
+}
+
+.WowImage {
+  & > img {
+    height: 30rem;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the height of your footer */
+  background-color: #333; /* Choose the background color for your footer */
+  color: #fff; /* Choose the text color for your footer */
+  text-align: center;
+  line-height: 60px; /* Vertically center text within the footer */
+}
